@@ -713,6 +713,148 @@ header .navbar .dropdown-menu a {
     opacity: 0;
     visibility: hidden;
 }
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar-brand, .navbar-toggler {
+    display: inline-block;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    order: 2;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: .375rem .75rem;
+}
+
+/* Remove the default navbar-toggler-icon */
+.navbar-toggler-icon {
+    display: none !important;
+}
+
+/* Offcanvas styles */
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1050;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-menu.show {
+    right: 0;
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.offcanvas-body {
+    padding: 1rem;
+}
+
+.offcanvas-body .nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    display: none;
+}
+
+.offcanvas-backdrop.show {
+    display: block;
+}
+
+.project-thumbnail {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* This creates a 4:3 aspect ratio */
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will crop the image while maintaining aspect ratio */
+}
+
+.link-thumbnail {
+    display: block;
+    height: 100%;
+}
+
+.link-thumbnail h3 {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 80%;
+}
+
+.link-thumbnail .icon {
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    right: 15px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.link-thumbnail:hover h3,
+.link-thumbnail:hover .icon {
+    opacity: 1;
+}
+
+.link-thumbnail:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.link-thumbnail:hover:before {
+    opacity: 1;
+}
 
 #loader {
     position: fixed;

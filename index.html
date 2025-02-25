@@ -29,12 +29,47 @@
     <header role="banner">
         <nav class="navbar navbar-expand-lg fixed-top transition-all">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Pivot</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
-                    aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="index.html">Manna Construction</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="offcanvas" aria-controls="offcanvasMenu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
                 </button>
     
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas-menu" id="offcanvasMenu">
+                    <div class="offcanvas-header">
+                        <h5>Manna Construction</h5>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">Contact</a>
+                            </li>
+                            <li class="nav-item cta-btn2">
+                                <a class="nav-link" href="get-quote.html">
+                                    <span class="d-inline-block px-4 py-2 border">Quotation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Regular Navigation for large screens -->
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
@@ -59,6 +94,9 @@
                         </li>
                     </ul>
                 </div>
+    
+                <!-- Backdrop for offcanvas -->
+                <div class="offcanvas-backdrop"></div>
             </div>
         </nav>
     </header>
@@ -99,15 +137,17 @@
             <div class="row align-items-center">
                 <div class="col-md-6 pr-lg-5 mb-5 mb-md-0  element-animate">
                     <div class="pr-lg-5">
-                        <h2 class="text-uppercase heading border-bottom mb-4 text-left">We Are Expert in
+                        <h2 class="text-uppercase heading border-bottom mb-4 text-left">We Are Experts in
                             <br>Construction Field</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam similique repellat
-                            dignissimos, omnis at ducimus pariatur odio praesentium eveniet porro sit quod, sequi unde
-                            atque magnam voluptate quae voluptatum. Delectus.</p>
-                        <p>At sed impedit, ab a officia blanditiis, fuga commodi delectus veniam architecto in nihil
-                            numquam eum maiores. Amet nihil, dolorum sit vitae fugit maxime earum optio culpa eum.
-                            Voluptates, labore.</p>
+                        <p>With years of experience in the industry, we bring unparalleled expertise, precision, and innovation to every project. 
+                            Our team is dedicated to delivering high-quality craftsmanship, ensuring that every structure we build stands the test of time.</p>
+                        <p>From residential developments to large-scale commercial projects, we specialize in a wide range of construction services, 
+                            combining advanced techniques with industry-leading materials. Our commitment to excellence, attention to detail, and 
+                            customer-focused approach make us a trusted name in the field.</p>
+                        <p>At Manna Construction, we don’t just build structures—we create lasting foundations for the future. Let’s bring your 
+                            vision to life with expertise you can rely on.</p>
                     </div>
+                    
                 </div>
                 <div class="col-md-6  element-animate">
                     <img src="img/work_thumb_1.jpg" alt="" class="img-fluid">
@@ -121,59 +161,85 @@
             <div class="row justify-content-center mb-5 element-animate">
                 <div class="col-md-8 text-center">
                     <h2 class="text-uppercase heading border-bottom mb-4">Recent Projects</h2>
-                    <p class="mb-3 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
-                        necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
-                    <p><a href="works.html" class="btn btn-primary">See All Projects</a></p>
+                    <p class="mb-3 lead">Take a look at some of our latest projects, where innovation meets precision. 
+                        From groundbreaking commercial developments to beautifully crafted residential spaces, 
+                        we take pride in delivering high-quality results that stand the test of time.</p>
+                    <p class="mb-3 lead">Our recent work showcases our commitment to excellence, efficiency, and attention to detail. 
+                        Every project is a testament to our expertise and dedication to bringing our clients' visions to life.</p>
                 </div>
             </div>
-
+        
             <div class="row no-gutters">
                 <div class="col-md-4 element-animate">
                     <a href="works-single.html" class="link-thumbnail">
-                        <h3>House Renovation</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="img/work_thumb_1.jpg" alt="Image placeholder" class="img-fluid">
+                        <div class="project-thumbnail">
+                            <h3>Pre-Construction </h3>
+                            <span class="ion-plus icon"></span>
+                            <div class="image-container">
+                                <img src="img/work_thumb_1.jpg" alt="Image placeholder">
+                            </div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-4 element-animate">
                     <a href="works-single.html" class="link-thumbnail">
-                        <h3>General Construction Building</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="img/work_thumb_2.jpg" alt="Image placeholder" class="img-fluid">
+                        <div class="project-thumbnail">
+                            <h3>General Construction Building</h3>
+                            <span class="ion-plus icon"></span>
+                            <div class="image-container">
+                                <img src="img/work_thumb_2.jpg" alt="Image placeholder">
+                            </div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-4 element-animate">
                     <a href="works-single.html" class="link-thumbnail">
-                        <h3>Pre-Construction</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="img/work_thumb_3.jpg" alt="Image placeholder" class="img-fluid">
+                        <div class="project-thumbnail">
+                            <h3>House Renovation</h3>
+                            <span class="ion-plus icon"></span>
+                            <div class="image-container">
+                                <img src="img/work_thumb_3.jpg" alt="Image placeholder">
+                            </div>
+                        </div>
                     </a>
                 </div>
-
+        
                 <div class="col-md-4 element-animate">
                     <a href="works-single.html" class="link-thumbnail">
-                        <h3>House Renovation</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="img/work_thumb_3.jpg" alt="Image placeholder" class="img-fluid">
+                        <div class="project-thumbnail">
+                            <h3>House Renovation</h3>
+                            <span class="ion-plus icon"></span>
+                            <div class="image-container">
+                                <img src="img/work_thumb_4.jpg" alt="Image placeholder">
+                            </div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-4 element-animate">
                     <a href="works-single.html" class="link-thumbnail">
-                        <h3>General Construction Building</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="img/work_thumb_1.jpg" alt="Image placeholder" class="img-fluid">
+                        <div class="project-thumbnail">
+                            <h3>General Construction Building</h3>
+                            <span class="ion-plus icon"></span>
+                            <div class="image-container">
+                                <img src="img/work_thumb_5.jpg" alt="Image placeholder">
+                            </div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-4 element-animate">
                     <a href="works-single.html" class="link-thumbnail">
-                        <h3>Pre-Construction</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="img/work_thumb_2.jpg" alt="Image placeholder" class="img-fluid">
+                        <div class="project-thumbnail">
+                            <h3>Pre-Construction</h3>
+                            <span class="ion-plus icon"></span>
+                            <div class="image-container">
+                                <img src="img/work_thumb_6.jpg" alt="Image placeholder">
+                            </div>
+                        </div>
                     </a>
                 </div>
-
             </div>
         </div>
+        
     </section>
     <!-- END section -->
 
@@ -182,10 +248,13 @@
 
             <div class="row justify-content-center mb-5 element-animate">
                 <div class="col-md-8 text-center">
-                    <h2 class="text-uppercase heading border-bottom mb-4">Services</h2>
-                    <p class="mb-3 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
-                        necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+                    <h2 class="text-uppercase heading border-bottom mb-4">Our Services</h2>
+                    <p class="mb-3 lead">We offer a comprehensive range of construction services designed to meet your needs with precision and excellence. 
+                        From initial planning and design to project execution and completion, our team ensures high-quality results every step of the way.</p>
+                    <p class="mb-3 lead">Whether it’s residential, commercial, or industrial construction, we bring expertise, innovation, and 
+                        a commitment to delivering projects on time and within budget. Your vision is our priority.</p>
                 </div>
+                
             </div>
 
             <div class="row mb-5">
@@ -194,36 +263,55 @@
                     <div class="media d-block media-feature text-center">
                         <span class="flaticon-blueprint icon"></span>
                         <div class="media-body">
-                            <h3 class="mt-0 text-black">Pre-Construction</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <h3 class="mt-0 text-black">Building Design and Construction</h3>
+                            <p>We specialize in designing and constructing durable, high-quality buildings, blending innovation with structural excellence.</p>
                         </div>
                     </div>
                 </div>
-
+            
                 <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
                     <div class="media d-block media-feature text-center">
                         <span class="flaticon-building-1 icon"></span>
                         <div class="media-body">
-                            <h3 class="mt-0 text-black">House Renovation</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <h3 class="mt-0 text-black">Engineering Survey</h3>
+                            <p>Precision-driven land and structural surveys to ensure accurate planning, feasibility, and execution of projects.</p>
                         </div>
                     </div>
                 </div>
-
+            
                 <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
                     <div class="media d-block media-feature text-center">
                         <span class="flaticon-crane icon"></span>
                         <div class="media-body">
-                            <h3 class="mt-0 text-black">General Contracting</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <h3 class="mt-0 text-black">Mechanical, Electrical & Plumbing Services</h3>
+                            <p>Seamless integration of MEP systems to optimize efficiency, safety, and sustainability in construction projects.</p>
                         </div>
                     </div>
                 </div>
-
+            
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <span class="flaticon-engineer icon"></span>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">General Civil Engineering Consultancy</h3>
+                            <p>Expert consulting services for infrastructure, structural design, and project management, ensuring compliance and excellence.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <span class="flaticon-building icon"></span>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">Interior Design & Finishing</h3>
+                            <p>Transforming spaces with expert tiling, screeding, and Plaster of Paris (POP) for elegant and modern interiors.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            
             </div>
+            
         </div>
     </section>
     <!-- END section -->
@@ -288,10 +376,11 @@
         <div class="container">
             <div class="row justify-content-center mb-5 element-animate">
                 <div class="col-md-8 text-center mb-5">
-                    <h2 class="text-uppercase heading border-bottom mb-4">Happy Customer Says</h2>
-                    <p class="mb-0 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
-                        necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+                    <h2 class="text-uppercase heading border-bottom mb-4">What Our Customers Say</h2>
+                    <p class="mb-0 lead">Our clients' satisfaction is our greatest achievement. Hear from happy customers who have 
+                        experienced our dedication to quality, reliability, and excellence in every project we undertake.</p>
                 </div>
+                
             </div>
 
             <div class="row">
@@ -301,31 +390,27 @@
                         <p>Jane Doe, <a href="#">XYZ Inc.</a></p>
                         <div class="media-body">
                             <blockquote>
-                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde
-                                    impedit, necessitatibus, soluta sit quam minima expedita atque corrupti
-                                    reiciendis.&rdquo;</p>
+                                <p>&ldquo;Exceptional service and top-notch craftsmanship! The team was professional, detail-oriented, 
+                                    and delivered our project on time. We couldn’t be happier with the results!&rdquo;</p>
                             </blockquote>
-
                         </div>
                     </div>
                 </div>
-
+            
                 <div class="col-md-6 element-animate">
                     <div class="media d-block media-testimonial text-center">
                         <img src="img/person_3.jpg" alt="Image placeholder" class="img-fluid mb-3">
-                        <p>John Doe, <a href="#">XYZ Inc.</a></p>
+                        <p>John Doe, <a href="#">ABC Developments</a></p>
                         <div class="media-body">
                             <blockquote>
-                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde
-                                    impedit, necessitatibus, soluta sit quam minima expedita atque corrupti
-                                    reiciendis.&rdquo;</p>
+                                <p>&ldquo;From start to finish, the experience was seamless. Their expertise and commitment to quality 
+                                    truly set them apart. I highly recommend their services for any construction project!&rdquo;</p>
                             </blockquote>
-
                         </div>
                     </div>
                 </div>
-
             </div>
+            
         </div>
     </section>
 
@@ -347,7 +432,7 @@
                         Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | Quib
+                        </script> All rights reserved | Manna Construction
                     </p>
                 </div>
                 <div class="col-md-3">
@@ -409,6 +494,39 @@
         }
         gtag('js', new Date());
         gtag('config', 'UA-23581568-13');
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Toggle offcanvas menu
+            $('[data-toggle="offcanvas"]').on('click', function() {
+                $('#offcanvasMenu').toggleClass('show');
+                $('.offcanvas-backdrop').toggleClass('show');
+                $('body').toggleClass('overflow-hidden');
+            });
+            
+            // Close offcanvas when clicking close button
+            $('.offcanvas-header .close').on('click', function() {
+                $('#offcanvasMenu').removeClass('show');
+                $('.offcanvas-backdrop').removeClass('show');
+                $('body').removeClass('overflow-hidden');
+            });
+            
+            // Close offcanvas when clicking backdrop
+            $('.offcanvas-backdrop').on('click', function() {
+                $('#offcanvasMenu').removeClass('show');
+                $('.offcanvas-backdrop').removeClass('show');
+                $('body').removeClass('overflow-hidden');
+            });
+            
+            // Close offcanvas when clicking nav links (on mobile)
+            $('.offcanvas-body .nav-link').on('click', function() {
+                if (window.innerWidth < 992) {
+                    $('#offcanvasMenu').removeClass('show');
+                    $('.offcanvas-backdrop').removeClass('show');
+                    $('body').removeClass('overflow-hidden');
+                }
+            });
+        });
     </script>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
