@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Pivot &mdash; Website Template by Colorlib</title>
+    <title>Manna Construction Quotation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,36 +22,69 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
 
-
 </head>
 
 <body>
-
     <header role="banner">
         <nav class="navbar navbar-expand-lg fixed-top transition-all">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Pivot</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
-                    aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="index.html">Manna Construction</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="offcanvas" aria-controls="offcanvasMenu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
                 </button>
     
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas-menu" id="offcanvasMenu">
+                    <div class="offcanvas-header">
+                        <h5>Manna Construction</h5>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">Contact</a>
+                            </li>
+                            <li class="nav-item cta-btn2">
+                                <a class="nav-link" href="get-quote.html">
+                                    <span class="d-inline-block px-4 py-2 border">Quotation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Regular Navigation for large screens -->
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">About</a>
+                            <a class="nav-link" href="#About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Projects</a>
+                            <a class="nav-link" href="#Projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Services</a>
+                            <a class="nav-link" href="#Services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Contact</a>
+                            <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                         <li class="nav-item cta-btn2">
                             <a class="nav-link" href="get-quote.html">
@@ -60,13 +93,16 @@
                         </li>
                     </ul>
                 </div>
+    
+                <!-- Backdrop for offcanvas -->
+                <div class="offcanvas-backdrop"></div>
             </div>
         </nav>
     </header>
     <!-- END header -->
 
     <section class="home-slider  inner-page owl-carousel">
-        <div class="slider-item" style="background-image: url('img/slider-1.jpg');">
+        <div class="slider-item" style="background-image: url('img/work_thumb_2.jpg');">
 
             <div class="container">
                 <div class="row slider-text align-items-center justify-content-center text-center">
@@ -77,7 +113,6 @@
             </div>
 
         </div>
-
 
     </section>
     <!-- END slider -->
@@ -112,13 +147,15 @@
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <label for="message">Say about your company</label>
-                                <textarea name="message" id="message" class="form-control form-control-lg" cols="30" rows="8"></textarea>
+                                <textarea name="message" id="message" class="form-control form-control-lg" cols="30"
+                                    rows="8"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <label for="message2">More info about project</label>
-                                <textarea name="message2" id="message2" class="form-control form-control-lg" cols="30" rows="8"></textarea>
+                                <textarea name="message2" id="message2" class="form-control form-control-lg" cols="30"
+                                    rows="8"></textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -131,26 +168,32 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-4">
                     <h2 class="text-uppercase heading mb-5 text-left ">Clients Says</h2>
-
-                    <div class="media d-block media-testimonial mb-5 text-left">
-                        <img src="img/person_1.jpg" alt="Image placeholder" class="img-fluid mb-3">
-                        <p>Jane Doe, <a href="#">XYZ Inc.</a></p>
-                        <div class="media-body">
-                            <blockquote>
-                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.&rdquo;</p>
-                            </blockquote>
-
+                    <div class="element-animate">
+                        <div class="media d-block media-testimonial mb-5 text-left">
+                            <img src="img/person_1.jpg" alt="Image placeholder" class="img-fluid mb-3">
+                            <p>Jane Doe, <a href="#">XYZ Inc.</a></p>
+                            <div class="media-body">
+                                <blockquote>
+                                    <p>&ldquo;Exceptional service and top-notch craftsmanship! The team was
+                                        professional, detail-oriented,
+                                        and delivered our project on time. We couldn’t be happier with the
+                                        results!&rdquo;</p>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="media d-block media-testimonial text-left">
-                        <img src="img/person_3.jpg" alt="Image placeholder" class="img-fluid mb-3">
-                        <p>John Doe, <a href="#">XYZ Inc.</a></p>
-                        <div class="media-body">
-                            <blockquote>
-                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.&rdquo;</p>
-                            </blockquote>
-
+                    <div class="element-animate">
+                        <div class="media d-block media-testimonial text-left">
+                            <img src="img/person_3.jpg" alt="Image placeholder" class="img-fluid mb-3">
+                            <p>John Doe, <a href="#">XYZ Inc.</a></p>
+                            <div class="media-body">
+                                <blockquote>
+                                    <p>&ldquo;From start to finish, the experience was seamless. Their expertise and
+                                        commitment to quality
+                                        truly set them apart. I highly recommend their services for any construction
+                                        project!&rdquo;</p>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
 
@@ -158,8 +201,6 @@
             </div>
         </div>
     </section>
-
-
 
     <section class="container cta-overlap">
         <div class="text d-flex">
@@ -179,7 +220,7 @@
                         Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | Quib
+                        </script> All rights reserved | Manna Construction
                     </p>
                 </div>
                 <div class="col-md-3">
@@ -218,7 +259,10 @@
     <!-- END footer -->
 
     <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#f4b214" /></svg></div>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -237,61 +281,87 @@
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'UA-23581568-13');
     </script>
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Get all links with href starting with #
-        const links = document.querySelectorAll('a[href^="#"]');
-        const navbar = document.querySelector('.navbar');
-        
-        // Function to change navbar style on scroll
-        function updateNavbar() {
-            if (window.scrollY > 100) {
-                navbar.classList.add('bg-white', 'navbar-light', 'shadow');
-                navbar.classList.remove('bg-transparent', 'navbar-dark');
-            } else {
-                navbar.classList.add('bg-transparent', 'navbar-light');
-                navbar.classList.remove('bg-white', 'navbar-light', 'shadow');
-            }
-        }
-        
-        // Add scroll event listener
-        window.addEventListener('scroll', updateNavbar);
-        
-        // Add click event listener to each link
-        links.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Get the target section id from href
-                const targetId = this.getAttribute('href');
-                
-                // Skip if href is just "#"
-                if (targetId === '#') return;
-                
-                // Get the target section
-                const targetSection = document.querySelector(targetId);
-                
-                // If target section exists, scroll to it
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    
-                    // Update URL without page reload
-                    history.pushState(null, '', targetId);
+      <script>
+        $(document).ready(function() {
+            // Toggle offcanvas menu
+            $('[data-toggle="offcanvas"]').on('click', function() {
+                $('#offcanvasMenu').toggleClass('show');
+                $('.offcanvas-backdrop').toggleClass('show');
+                $('body').toggleClass('overflow-hidden');
+            });
+            
+            // Close offcanvas when clicking close button
+            $('.offcanvas-header .close').on('click', function() {
+                $('#offcanvasMenu').removeClass('show');
+                $('.offcanvas-backdrop').removeClass('show');
+                $('body').removeClass('overflow-hidden');
+            });
+            
+            // Close offcanvas when clicking backdrop
+            $('.offcanvas-backdrop').on('click', function() {
+                $('#offcanvasMenu').removeClass('show');
+                $('.offcanvas-backdrop').removeClass('show');
+                $('body').removeClass('overflow-hidden');
+            });
+            
+            // Close offcanvas when clicking nav links (on mobile)
+            $('.offcanvas-body .nav-link').on('click', function() {
+                if (window.innerWidth < 992) {
+                    $('#offcanvasMenu').removeClass('show');
+                    $('.offcanvas-backdrop').removeClass('show');
+                    $('body').removeClass('overflow-hidden');
                 }
             });
         });
-        
-        // Initial check for navbar style
-        updateNavbar();
-    });
-        </script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9134af356a3393e0","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.1.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all links with href starting with #
+            const links = document.querySelectorAll('a[href^="#"]');
+            const navbar = document.querySelector('.navbar');
+            // Function to change navbar style on scroll
+            function updateNavbar() {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('bg-white', 'navbar-light', 'shadow');
+                    navbar.classList.remove('bg-transparent', 'navbar-dark');
+                } else {
+                    navbar.classList.add('bg-transparent', 'navbar-light');
+                    navbar.classList.remove('bg-white', 'navbar-light', 'shadow');
+                }
+            }
+            // Add scroll event listener
+            window.addEventListener('scroll', updateNavbar);
+            // Add click event listener to each link
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Get the target section id from href
+                    const targetId = this.getAttribute('href');
+                    // Skip if href is just "#"
+                    if (targetId === '#') return;
+                    // Get the target section
+                    const targetSection = document.querySelector(targetId);
+                    // If target section exists, scroll to it
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Update URL without page reload
+                        history.pushState(null, '', targetId);
+                    }
+                });
+            });
+            // Initial check for navbar style
+            updateNavbar();
+        });
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"9134af356a3393e0","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.1.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
         crossorigin="anonymous"></script>
 </body>
 
