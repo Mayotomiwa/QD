@@ -1,0 +1,30 @@
+name: Deploy Static Site to go54.com
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Deploy to go54.com via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./  # Deploy from root directory
+        server-dir: ./public_html/  # Adjust this to match your go54.com structure
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/.github/**
+          **/README.md
+          **/.gitignore
+          **/.DS_Store
+          **/Thumbs.db
