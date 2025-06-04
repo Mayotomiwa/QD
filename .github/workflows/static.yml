@@ -18,8 +18,10 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./  # Deploy from root directory
-        server-dir: ./public_html/  # Adjust this to match your go54.com structure
+        local-dir: ./
+        server-dir: /public_html/  # Deploy to your website directory
+        protocol: ftp
+        port: 21  # Standard FTP port
         exclude: |
           **/.git*
           **/.git*/**
