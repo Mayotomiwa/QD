@@ -12,32 +12,21 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    # Try SFTP first (more common with modern hosts)
-    - name: Deploy to go54.com via SFTP
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+    - name: Deploy to go54.com via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local_path: './*'
-        remote_path: '/public_html/'  # Adjust this path
-        sftpArgs: '-o ConnectTimeout=5'
-        
-    # Backup: Try regular FTP if SFTP doesn't work
-    # - name: Deploy to go54.com via FTP
-    #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-    #   with:
-    #     server: ${{ secrets.FTP_SERVER }}
-    #     username: ${{ secrets.FTP_USERNAME }}
-    #     password: ${{ secrets.FTP_PASSWORD }}
-    #     local-dir: ./
-    #     server-dir: ./public_html/
-    #     protocol: ftp
-    #     exclude: |
-    #       **/.git*
-    #       **/.git*/**
-    #       **/.github/**
-    #       **/README.md
-    #       **/.gitignore
-    #       **/.DS_Store
-    #       **/Thumbs.db
+        local-dir: ./
+        server-dir: /public_html/  # Deploy to your website directory
+        protocol: ftp
+        port: 21  # Standard FTP port
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/.github/**
+          **/README.md
+          **/.gitignore
+          **/.DS_Store
+          **/Thumbs.db
